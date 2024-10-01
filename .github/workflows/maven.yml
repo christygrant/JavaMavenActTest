@@ -31,7 +31,7 @@ jobs:
     - name: Setup Maven Action
       uses: stCarolas/setup-maven@v5
       with:
-          maven-version: ${{ secrets.MAVEN_VERSION }}
+          maven-version: 3.8.2
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
